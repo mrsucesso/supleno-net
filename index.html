@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supleno - Treinamentos em PNL, Hipnose e Coaching</title>
+    <meta name="description" content="Transforme sua vida com PNL, Hipnose e Coaching. Treinamentos profissionais com Maurício Supleno e Sandra Nakkoud em Vila Velha, ES.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .services {
+            background: white;
+            padding: 80px 20px;
+        }
+        
+        .services h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #667eea;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .service-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .service-card p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .about {
+            background: #f8f9fa;
+            padding: 80px 20px;
+        }
+        
+        .about h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #667eea;
+        }
+        
+        .about p {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-size: 1.2em;
+            text-align: center;
+            line-height: 1.8;
+        }
+        
+        .instructors {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 900px;
+            margin: 40px auto 0;
+        }
+        
+        .instructor {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .instructor h3 {
+            font-size: 1.8em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .instructor p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        
+        .contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .contact p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.2em;
+            line-height: 2;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+            transition: opacity 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            opacity: 0.8;
+        }
+        
+        footer {
+            background: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .hero p {
+                font-size: 1.1em;
+            }
+            
+            .services h2, .about h2, .contact h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">SUPLENO</div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Transforme Sua Vida com PNL, Hipnose e Coaching</h1>
+            <p>Treinamentos profissionais para reprogramação mental e desenvolvimento pessoal</p>
+            <a href="https://wa.me/5527981125528?text=Olá! Gostaria de saber mais sobre os treinamentos Supleno." class="cta-button">
+                📱 Fale Conosco no WhatsApp
+            </a>
+        </div>
+    </section>
+    
+    <section class="services">
+        <div class="container">
+            <h2>Nossos Treinamentos</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>🧠 PNL</h3>
+                    <p>Programação Neurolinguística para transformar padrões mentais e alcançar seus objetivos com mais eficiência e clareza.</p>
+                </div>
+                <div class="service-card">
+                    <h3>✨ Hipnose</h3>
+                    <p>Técnicas avançadas de hipnose terapêutica para mudanças profundas e duradouras em sua mente e comportamento.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🎯 Coaching</h3>
+                    <p>Desenvolvimento de habilidades e estratégias para alcançar alta performance pessoal e profissional.</p>
+                </div>
+                <div class="service-card">
+                    <h3>💪 EFT & TFT</h3>
+                    <p>Técnicas de liberação emocional para superar traumas, ansiedade, fobias e padrões limitantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about">
+        <div class="container">
+            <h2>Sobre o Supleno</h2>
+            <p>
+                O Supleno é referência em treinamentos de reprogramação mental, oferecendo cursos e atendimentos especializados em PNL, Hipnose, Coaching e terapias complementares. Nossa missão é auxiliar pessoas a superarem limitações, transformarem comportamentos e alcançarem uma vida plena e equilibrada.
+            </p>
+            <p>
+                Com anos de experiência e centenas de alunos transformados, combinamos técnicas comprovadas com uma abordagem humanizada e personalizada. Seja para emagrecimento, superação de traumas, desenvolvimento pessoal ou certificação profissional, estamos aqui para guiá-lo nessa jornada de transformação.
+            </p>
+            
+            <div class="instructors">
+                <div class="instructor">
+                    <h3>Maurício Supleno</h3>
+                    <p>Terapeuta e Instrutor<br>Especialista em PNL, Hipnose e EFT</p>
+                </div>
+                <div class="instructor">
+                    <h3>Sandra Nakkoud</h3>
+                    <p>Terapeuta e Instrutora<br>Master em PNL e Coach</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Agende uma conversa e descubra como podemos ajudá-lo</p>
+            <div class="contact-info">
+                📱 <a href="https://wa.me/5527981125528">WhatsApp: (27) 98112-5528</a><br>
+                📧 Email: atendimento@sucesso.com.br<br>
+                📍 Praia da Costa | Vila Velha - ES
+            </div>
+            <br><br>
+            <a href="https://wa.me/5527981125528?text=Olá! Gostaria de saber mais sobre os treinamentos Supleno." class="cta-button">
+                Agendar Consulta
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Supleno Treinamentos e Desenvolvimento. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
